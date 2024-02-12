@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 5;
+    animation-name: move;
+    animation-duration: 4.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    from{
+    scale: 0.3;
+    }
+    to{
+     scale: 1;
+    }
+}
+
+footer{
+    position: fixed;
+    text-align: center;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 215, 217);
+    width: 100%;
+    bottom: 0;
+    
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    outline-color: crimson;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #fff;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: crimson;
+    scale: 1.09;
+    opacity: 0.9;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: crimson;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+#progressText {
+    font-size: 14px;
+}
